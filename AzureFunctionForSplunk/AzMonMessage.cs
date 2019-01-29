@@ -103,23 +103,23 @@ namespace AzureFunctionForSplunk
         {
             if (TenantId != "")
             {
-                ((IDictionary<String, Object>)Message).Add($"{prefix}_TenantId", TenantId);
+                ((IDictionary<String, Object>)Message).Add($"TenantId", TenantId);
             }
             if (SubscriptionId != "")
             {
-                ((IDictionary<String, Object>)Message).Add($"{prefix}_SubscriptionId", SubscriptionId);
+                ((IDictionary<String, Object>)Message).Add($"SubscriptionId", SubscriptionId);
             }
             if (ResourceGroup != "")
             {
-                ((IDictionary<String, Object>)Message).Add($"{prefix}_ResourceGroup", ResourceGroup);
+                ((IDictionary<String, Object>)Message).Add($"ResourceGroup", ResourceGroup);
             }
             if (ResourceType != "")
             {
-                ((IDictionary<String, Object>)Message).Add($"{prefix}_ResourceType", ResourceType);
+                ((IDictionary<String, Object>)Message).Add($"ResourceType", ResourceType);
             }
             if (ResourceName != "")
             {
-                ((IDictionary<String, Object>)Message).Add($"{prefix}_ResourceName", ResourceName);
+                ((IDictionary<String, Object>)Message).Add($"ResourceName", ResourceName);
             }
         }
 
